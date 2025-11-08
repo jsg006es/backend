@@ -32,7 +32,7 @@ public class TokenJpaAdapter implements TokenPersistencePort {
         httpPost.setHeader("Requested-By", "prueba-back");
         httpPost.setHeader("Accept", "application/json");
         httpPost.setHeader("Content-type", "application/json");
-
+        // coment
         try (CloseableHttpClient client = HttpClients.createDefault();
              CloseableHttpResponse response = client.execute(httpPost)) {
              responseToken = EntityUtils.toString(response.getEntity());
